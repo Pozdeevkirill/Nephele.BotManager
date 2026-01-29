@@ -1,0 +1,49 @@
+{
+  "Serilog": {
+
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "System": "Debug",
+        "Microsoft": "Debug",
+        "Microsoft.AspNetCore": "Warning",
+        "Microsoft.AspNetCore.Hosting.Diagnostics": "Error",
+        "Microsoft.EntityFrameworkCore.Database.Connection": "Error",
+        "Microsoft.EntityFrameworkCore.Database.Command": "Error",
+        "Microsoft.EntityFrameworkCore.Model.Validation": "Error",
+        "Microsoft.EntityFrameworkCore.Infrastructure": "Error",
+        "Microsoft.EntityFrameworkCore.Database.Transaction": "Error",
+        "Microsoft.EntityFrameworkCore.Migrations": "Error",
+        "Microsoft.EntityFrameworkCore.Query": "Error",
+        "Microsoft.EntityFrameworkCore.ChangeTracking": "Error",
+        "Microsoft.EntityFrameworkCore.Update": "Error"
+      }
+    },
+
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff}] {CustomLevel_u3} [{SourceContext}] - {Message}{NewLine}{Exception}"
+        }
+      },
+      {
+        "Name": "Debug",
+        "Args": {
+          "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff}] {CustomLevel_u3} [{SourceContext}] - {Message}{NewLine}{Exception}"
+        }
+      },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "logs//log.log",
+          "rollingInterval": "Day",
+          "fileSizeLimitBytes": 5242880,
+          "rollOnFileSizeLimit": true,
+          "retainedFileCountLimit": null,
+          "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff}] {CustomLevel_u3} [{SourceContext}] - {Message}{NewLine}{Exception}"
+        }
+      }
+    ]
+  }
+}

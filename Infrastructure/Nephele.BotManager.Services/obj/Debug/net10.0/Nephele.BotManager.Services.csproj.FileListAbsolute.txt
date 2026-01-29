@@ -1,0 +1,11 @@
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\bin\Debug\net10.0\Nephele.BotManager.Services.deps.json
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\bin\Debug\net10.0\Nephele.BotManager.Services.dll
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\bin\Debug\net10.0\Nephele.BotManager.Services.pdb
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\Nephele.BotManager.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\Nephele.BotManager.Services.AssemblyInfoInputs.cache
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\Nephele.BotManager.Services.AssemblyInfo.cs
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\Nephele.BotManager.Services.csproj.CoreCompileInputs.cache
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\Nephele.BotManager.Services.dll
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\refint\Nephele.BotManager.Services.dll
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\Nephele.BotManager.Services.pdb
+C:\Users\SkyZen\RiderProjects\Nephele\Nephele.BotManager\Infrastructure\Nephele.BotManager.Services\obj\Debug\net10.0\ref\Nephele.BotManager.Services.dll

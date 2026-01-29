@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "Im4kBUA7nVo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SkyZen\\Nephele.BotManager\\Services\\Nephele.BotManager.API\\Nephele.BotManager.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SkyZen\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.2\\microsoft.entityframeworkcore.10.0.2.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.2\\microsoft.entityframeworkcore.abstractions.10.0.2.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.2\\microsoft.entityframeworkcore.analyzers.10.0.2.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.2\\microsoft.entityframeworkcore.relational.10.0.2.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.0\\microsoft.extensions.dependencymodel.10.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\microsoft.openapi\\2.3.0\\microsoft.openapi.2.3.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\netescapades.configuration.yaml\\3.1.0\\netescapades.configuration.yaml.3.1.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\npgsql\\10.0.1\\npgsql.10.0.1.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\10.0.0\\npgsql.entityframeworkcore.postgresql.10.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog\\4.3.1-dev-02406\\serilog.4.3.1-dev-02406.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.aspnetcore\\10.0.0\\serilog.aspnetcore.10.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.extensions.hosting\\10.0.0\\serilog.extensions.hosting.10.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.extensions.logging\\10.0.0\\serilog.extensions.logging.10.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.formatting.compact\\3.0.0\\serilog.formatting.compact.3.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.settings.configuration\\10.0.0\\serilog.settings.configuration.10.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.sinks.debug\\3.0.0\\serilog.sinks.debug.3.0.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\serilog.sinks.file\\8.0.0-dev-02318\\serilog.sinks.file.8.0.0-dev-02318.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.0\\swashbuckle.aspnetcore.swagger.10.1.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.0\\swashbuckle.aspnetcore.swaggergen.10.1.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.0\\swashbuckle.aspnetcore.swaggerui.10.1.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\yamldotnet\\13.0.1\\yamldotnet.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

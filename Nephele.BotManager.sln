@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4800A31F-D771-4860-9739-B4F307C4B3F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.API", "Services\Nephele.BotManager.API\Nephele.BotManager.API.csproj", "{D93ED542-FA69-42EC-9C51-D249C057A77E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{71833BCE-F7ED-48E5-AD86-0A7209C98E47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8CAD2DC4-6757-464C-8F6F-999A618DA089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Services", "Infrastructure\Nephele.BotManager.Services\Nephele.BotManager.Services.csproj", "{D9D04F2F-241D-4B96-B200-12F911E65461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Models", "Infrastructure\Nephele.BotManager.Models\Nephele.BotManager.Models.csproj", "{13894242-3D4B-470A-A2AE-6965F59A49DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Repository", "Infrastructure\Nephele.BotManager.Repository\Nephele.BotManager.Repository.csproj", "{02F8FCF8-066D-4DC7-B981-22379FB0CF2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Settings", "Common\Nephele.BotManager.Settings\Nephele.BotManager.Settings.csproj", "{C5264675-81B1-4976-ADDC-4498A1CB30FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Extensions", "Common\Nephele.BotManager.Extensions\Nephele.BotManager.Extensions.csproj", "{3879C09C-5526-4E1B-BFD8-D072D22F401D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{641BF823-C8F0-4EF8-B9DA-6DC82D832389}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\serilogConfig.json = Solution Items\serilogConfig.json
+		Solution Items\globalsettings.yml = Solution Items\globalsettings.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D93ED542-FA69-42EC-9C51-D249C057A77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93ED542-FA69-42EC-9C51-D249C057A77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93ED542-FA69-42EC-9C51-D249C057A77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93ED542-FA69-42EC-9C51-D249C057A77E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D04F2F-241D-4B96-B200-12F911E65461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D04F2F-241D-4B96-B200-12F911E65461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D04F2F-241D-4B96-B200-12F911E65461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D04F2F-241D-4B96-B200-12F911E65461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13894242-3D4B-470A-A2AE-6965F59A49DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13894242-3D4B-470A-A2AE-6965F59A49DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13894242-3D4B-470A-A2AE-6965F59A49DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13894242-3D4B-470A-A2AE-6965F59A49DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F8FCF8-066D-4DC7-B981-22379FB0CF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F8FCF8-066D-4DC7-B981-22379FB0CF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F8FCF8-066D-4DC7-B981-22379FB0CF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F8FCF8-066D-4DC7-B981-22379FB0CF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5264675-81B1-4976-ADDC-4498A1CB30FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5264675-81B1-4976-ADDC-4498A1CB30FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5264675-81B1-4976-ADDC-4498A1CB30FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5264675-81B1-4976-ADDC-4498A1CB30FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3879C09C-5526-4E1B-BFD8-D072D22F401D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3879C09C-5526-4E1B-BFD8-D072D22F401D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3879C09C-5526-4E1B-BFD8-D072D22F401D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3879C09C-5526-4E1B-BFD8-D072D22F401D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D93ED542-FA69-42EC-9C51-D249C057A77E} = {4800A31F-D771-4860-9739-B4F307C4B3F7}
+		{D9D04F2F-241D-4B96-B200-12F911E65461} = {71833BCE-F7ED-48E5-AD86-0A7209C98E47}
+		{13894242-3D4B-470A-A2AE-6965F59A49DD} = {71833BCE-F7ED-48E5-AD86-0A7209C98E47}
+		{02F8FCF8-066D-4DC7-B981-22379FB0CF2A} = {71833BCE-F7ED-48E5-AD86-0A7209C98E47}
+		{C5264675-81B1-4976-ADDC-4498A1CB30FE} = {8CAD2DC4-6757-464C-8F6F-999A618DA089}
+		{3879C09C-5526-4E1B-BFD8-D072D22F401D} = {8CAD2DC4-6757-464C-8F6F-999A618DA089}
+	EndGlobalSection
+EndGlobal

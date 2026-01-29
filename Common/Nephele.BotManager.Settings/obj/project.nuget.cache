@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zqHZ4mmsmpU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SkyZen\\Nephele.BotManager\\Common\\Nephele.BotManager.Settings\\Nephele.BotManager.Settings.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SkyZen\\.nuget\\packages\\gitinfo\\3.6.0\\gitinfo.3.6.0.nupkg.sha512",
+    "C:\\Users\\SkyZen\\.nuget\\packages\\thisassembly.constants\\2.1.2\\thisassembly.constants.2.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
