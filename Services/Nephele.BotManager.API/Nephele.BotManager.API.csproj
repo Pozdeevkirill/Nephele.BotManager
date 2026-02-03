@@ -4,21 +4,29 @@
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>f39164a8-0e7f-4702-ab40-6beda0dbd714</UserSecretsId>
+        <DockerfileContext>..\..</DockerfileContext>
+        <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.1.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
+      <ProjectReference Include="..\..\Infrastructure\Nephele.BotManager.Repository\Nephele.BotManager.Repository.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\Nephele.BotManager.Services\Nephele.BotManager.Services.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Infrastructure\Nephele.BotManager.Repository\Nephele.BotManager.Repository.csproj" />
+      <Content Include="..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>

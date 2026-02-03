@@ -1,3 +1,5 @@
+using Nephele.BotManager.Models.Enums;
+
 namespace Nephele.BotManager.Models.DomainModels;
 
 /// <summary>
@@ -19,7 +21,7 @@ public class BotInfo : Entity
     public string Name { get; set; }
     
     /// <summary>
-    /// Шифровать токен
+    /// токен
     /// </summary>
     public string Token { get; set; }
     

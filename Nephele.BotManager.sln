@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4800A31F-D771-4860-9739-B4F307C4B3F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.API", "Services\Nephele.BotManager.API\Nephele.BotManager.API.csproj", "{D93ED542-FA69-42EC-9C51-D249C057A77E}"
@@ -20,9 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Extensio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{641BF823-C8F0-4EF8-B9DA-6DC82D832389}"
 	ProjectSection(SolutionItems) = preProject
-		Solution Items\serilogConfig.json = Solution Items\serilogConfig.json
 		Solution Items\globalsettings.yml = Solution Items\globalsettings.yml
+		Solution Items\serilogConfig.json = Solution Items\serilogConfig.json
 	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +59,13 @@ Global
 		{3879C09C-5526-4E1B-BFD8-D072D22F401D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3879C09C-5526-4E1B-BFD8-D072D22F401D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3879C09C-5526-4E1B-BFD8-D072D22F401D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D93ED542-FA69-42EC-9C51-D249C057A77E} = {4800A31F-D771-4860-9739-B4F307C4B3F7}

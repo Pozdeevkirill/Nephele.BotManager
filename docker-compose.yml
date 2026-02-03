@@ -1,0 +1,4 @@
+services:
+  nephele.botmanager.api:
+    image: ${DOCKER_REGISTRY-}nephele.botmanager.api
+    container_name: nephele.botmanager.api
