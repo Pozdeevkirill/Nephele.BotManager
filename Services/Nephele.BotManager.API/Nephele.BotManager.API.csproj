@@ -30,6 +30,9 @@
         <Content Include="..\..\Solution Items\*.*" Link="Solution Items\%(FileName)%(Extension)">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
+        <Content Include="..\..\.git\*.*" Link=".git\%(FileName)%(Extension)">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 </Project>

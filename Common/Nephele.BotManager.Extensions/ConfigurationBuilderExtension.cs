@@ -68,7 +68,7 @@ public static class ConfigurationBuilderExtension
     {
         builder.Services.AddSwaggerGen(c =>
             {
-                string appVersion = AssemblyVersion.FullVersion;
+                string appVersion = GitVersion.FullVersion;
 
                 c.SwaggerDoc("v1", new()
                 {
