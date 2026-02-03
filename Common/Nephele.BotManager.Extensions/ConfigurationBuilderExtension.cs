@@ -87,15 +87,13 @@ public static class ConfigurationBuilderExtension
     {
         builder.Services.AddCors(options =>
         {
-            options.AddDefaultPolicy(
-                policy =>
-                {
-                    policy
-                        .WithOrigins("*")
-                        .SetIsOriginAllowed((host) => true)
-                        .WithMethods("*")
-                        .WithHeaders("*");
-                });
+            options.AddPolicy("SSE", policy =>
+            {
+                policy.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .WithExposedHeaders("Cache-Control", "Content-Language", "Content-Type", "Expires", "Last-Modified", "Pragma");
+            });
         });
         return builder;
     }
@@ -119,7 +117,9 @@ public static class ConfigurationBuilderExtension
         var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
         var solutionDirectory = isWindows
             ? TryGetSolutionDirectory()
-            : TryGetSolutionDirectoryDocker(); 
+            : TryGetSolutionDirectoryDocker();
+        Console.WriteLine(solutionDirectory);
+        var fieles = Directory.GetFiles(solutionDirectory.FullName);
         return solutionDirectory;
     }
     

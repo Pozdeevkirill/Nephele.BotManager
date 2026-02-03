@@ -1,3 +1,11 @@
+volumes:
+  configs:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./Solution Items
+
 services:
   nephele.botmanager.api:
     image: ${DOCKER_REGISTRY-}nephele.botmanager.api

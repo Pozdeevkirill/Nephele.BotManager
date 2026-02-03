@@ -33,21 +33,23 @@ public class Startup
     
     public void Configure(WebApplication app)
     {
-        app.UseCors(MyAllowSpecificOrigins);
+        
+        
+        app.UseStaticFiles();
         app.UseRouting();
+        app.UseCors("SSE");
         app.UseAuthentication();
         app.UseAuthorization();
-        app.UseStaticFiles();
         //app.UseMiddleware<ExceptionHandlingMiddleware>();
         //app.InitDb(); //Инициализация бд гос ключа
-
-        // Конфигурация Swagger
-        app.UseSwagger();
-        app.UseSwaggerUI();
 
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllers();
         });
+        // Конфигурация Swagger
+        app.UseSwagger();
+        app.UseSwaggerUI();
+
     }
 }

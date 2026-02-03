@@ -27,6 +27,9 @@
       <Content Include="..\..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+        <Content Include="..\..\Solution Items\*.*" Link="Solution Items\%(FileName)%(Extension)">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 </Project>

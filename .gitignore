@@ -270,3 +270,5 @@ ModelManifest.xml
 
 obj/
 bin/
+
+logs/
