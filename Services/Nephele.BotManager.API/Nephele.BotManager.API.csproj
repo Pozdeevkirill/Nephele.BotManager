@@ -12,6 +12,10 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.1.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.0" />
@@ -19,6 +23,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\Migrations\Nephele.BotManager.Migrations.PostgreSql\Nephele.BotManager.Migrations.PostgreSql.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\Migrations\Nephele.BotManager.Migrations.SqlServer\Nephele.BotManager.Migrations.SqlServer.csproj" />
       <ProjectReference Include="..\..\Infrastructure\Nephele.BotManager.Repository\Nephele.BotManager.Repository.csproj" />
       <ProjectReference Include="..\..\Infrastructure\Nephele.BotManager.Services\Nephele.BotManager.Services.csproj" />
     </ItemGroup>

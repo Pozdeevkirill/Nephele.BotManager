@@ -1,2 +1,2 @@
 database:
-  Database: Port=
+  Database: #your connection string 

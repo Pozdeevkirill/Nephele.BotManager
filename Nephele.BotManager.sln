@@ -29,6 +29,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{ACEC0536-DD5B-4361-BE33-D904ABDC9433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Migrations.SqlServer", "Infrastructure\Migrations\Nephele.BotManager.Migrations.SqlServer\Nephele.BotManager.Migrations.SqlServer.csproj", "{54317A18-9E31-4098-8956-E9C9AD05D057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nephele.BotManager.Migrations.PostgreSql", "Infrastructure\Migrations\Nephele.BotManager.Migrations.PostgreSql\Nephele.BotManager.Migrations.PostgreSql.csproj", "{2B1B0386-E89B-4431-A6CB-5C14E153FB66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +69,14 @@ Global
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54317A18-9E31-4098-8956-E9C9AD05D057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54317A18-9E31-4098-8956-E9C9AD05D057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54317A18-9E31-4098-8956-E9C9AD05D057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54317A18-9E31-4098-8956-E9C9AD05D057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B1B0386-E89B-4431-A6CB-5C14E153FB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B1B0386-E89B-4431-A6CB-5C14E153FB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B1B0386-E89B-4431-A6CB-5C14E153FB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B1B0386-E89B-4431-A6CB-5C14E153FB66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +88,8 @@ Global
 		{02F8FCF8-066D-4DC7-B981-22379FB0CF2A} = {71833BCE-F7ED-48E5-AD86-0A7209C98E47}
 		{C5264675-81B1-4976-ADDC-4498A1CB30FE} = {8CAD2DC4-6757-464C-8F6F-999A618DA089}
 		{3879C09C-5526-4E1B-BFD8-D072D22F401D} = {8CAD2DC4-6757-464C-8F6F-999A618DA089}
+		{ACEC0536-DD5B-4361-BE33-D904ABDC9433} = {71833BCE-F7ED-48E5-AD86-0A7209C98E47}
+		{54317A18-9E31-4098-8956-E9C9AD05D057} = {ACEC0536-DD5B-4361-BE33-D904ABDC9433}
+		{2B1B0386-E89B-4431-A6CB-5C14E153FB66} = {ACEC0536-DD5B-4361-BE33-D904ABDC9433}
 	EndGlobalSection
 EndGlobal

@@ -13,6 +13,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Nephele.BotManager.Models\Nephele.BotManager.Models.csproj" />
+      <ProjectReference Include="..\Nephele.BotManager.Repository\Nephele.BotManager.Repository.csproj" />
     </ItemGroup>
 
 </Project>

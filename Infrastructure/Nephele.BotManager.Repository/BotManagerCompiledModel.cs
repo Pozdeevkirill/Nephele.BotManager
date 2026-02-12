@@ -13,6 +13,22 @@ public class BotManagerCompiledModel
     {
         var builder = new ModelBuilder();
 
+        builder.Entity<BotOwner>(entity =>
+        {
+            entity.ToTable("BotOwner");
+            entity.AddEntityFieldMap();
+
+            entity.Property(x => x.Name)
+                .IsRequired()
+                .HasColumnName("Name")
+                .HasColumnType(DbTypes.StringLength(300));
+            
+            entity.Property(x => x.Endpoint)
+                .IsRequired()
+                .HasColumnName("Endpoint")
+                .HasColumnType(DbTypes.StringLength(1000));
+        });
+        
         builder.Entity<BotInfo>(entity =>
         {
             entity.ToTable("BotInfo");
@@ -41,6 +57,15 @@ public class BotManagerCompiledModel
             entity.Property(x => x.DateStart)
                 .HasColumnName("DateStart")
                 .HasColumnType(DbTypes.DateTime);
+            
+            entity.Property(x => x.BotOwnerId)
+                .HasColumnName("BotOwner_id")
+                .HasColumnType(DbTypes.Guid);
+
+            entity.HasOne(x => x.BotOwner)
+                .WithOne()
+                .HasForeignKey<BotOwner>(x => x.Id)
+                .IsRequired();
         });
         
         return builder.FinalizeModel();

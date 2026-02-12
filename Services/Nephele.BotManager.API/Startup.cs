@@ -18,6 +18,7 @@ public class Startup
             .AddLoggerConfiguration()
             .AddSwaggerConfiguration("Nephele.BotManager.API")
             .AddCorsConfiguration(MyAllowSpecificOrigins)
+            .AddDatabase()
             ;
 
         
@@ -33,15 +34,13 @@ public class Startup
     
     public void Configure(WebApplication app)
     {
-        
-        
         app.UseStaticFiles();
         app.UseRouting();
         app.UseCors("SSE");
         app.UseAuthentication();
         app.UseAuthorization();
         //app.UseMiddleware<ExceptionHandlingMiddleware>();
-        //app.InitDb(); //Инициализация бд гос ключа
+        app.InitDb(); //Инициализация бд
 
         app.UseEndpoints(endpoints =>
         {

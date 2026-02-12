@@ -14,6 +14,7 @@ public class BotManagerDbContext : DbContext, IBotManagerDbContext
     public BotManagerDbContext(DbContextOptions<BotManagerDbContext> options) 
         : base(options) { }
     
+    public DbSet<BotOwner> BotOwner => Set<BotOwner>();
     public DbSet<BotInfo> BotInfo => Set<BotInfo>();
     
     

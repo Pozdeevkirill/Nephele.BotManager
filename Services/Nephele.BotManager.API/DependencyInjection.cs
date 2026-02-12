@@ -13,6 +13,8 @@ public static class DependencyInjection
         #endregion
         
         services.AddSingleton<IBotService, BotService>();
+        services.AddScoped<IBotInfoService, BotInfoService>();
+        services.AddScoped<IBotOwnerService, BotOwnerService>();
         services.AddHostedService(provider => 
             (BotService)provider.GetRequiredService<IBotService>());
         

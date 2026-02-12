@@ -8,7 +8,7 @@ public class Entity
     /// <summary>
     /// Ид сущности
     /// </summary>
-    public long Id { get; set; }
+    public Guid Id { get; set; }
     
     /// <summary>
     /// Версия сущности

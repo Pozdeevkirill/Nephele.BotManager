@@ -5,13 +5,40 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Nephele.BotManager.Logger;
 using Nephele.BotManager.Models.DomainModels;
+using Nephele.BotManager.Settings;
 
 namespace Nephele.BotManager.Repository;
 
 public static class DbExtension
 {
+    public static IHostApplicationBuilder AddDatabase(this IHostApplicationBuilder builder)
+    {
+        DbTypes.Init();
+        builder.Services.AddDbContext<BotManagerDbContext>(x =>
+        {
+            x.EnableSensitiveDataLogging();
+            if (Global.Database.DBType == "sqlserver")
+            {
+                x.UseSqlServer(Global.Database.ConnectionString,
+                    y => y.MigrationsAssembly("Nephele.BotManager.Migrations.SqlServer")
+                );
+            }
+            else
+            {
+                x.UseNpgsql(Global.Database.ConnectionString,
+                    y => y.MigrationsAssembly("Nephele.BotManager.Migrations.PostgreSql")
+                );
+            }
+            x.UseModel(BotManagerCompiledModel.Instance);
+        });
+        
+        
+        return builder;
+    }
+    
     public static void InitDb(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();

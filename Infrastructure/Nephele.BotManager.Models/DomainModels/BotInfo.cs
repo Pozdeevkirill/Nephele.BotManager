@@ -7,8 +7,13 @@ namespace Nephele.BotManager.Models.DomainModels;
 /// </summary>
 public class BotInfo : Entity
 {
-    public BotInfo(string name, string token)
+    protected BotInfo()
     {
+    }
+    
+    public BotInfo(Guid ownerId, string name, string token)
+    {
+        BotOwnerId = ownerId;
         CreateDate = DateTime.Now;
         Name = name;
         Token = token;
@@ -39,4 +44,10 @@ public class BotInfo : Entity
     /// Дата старта бота
     /// </summary>
     public DateTime DateStart { get; set; }
+    
+    /// <summary>
+    /// Владелец бота
+    /// </summary>
+    public BotOwner BotOwner { get; set; }
+    public Guid BotOwnerId { get; set; }
 }
